@@ -1,0 +1,4 @@
+interface:
+  display_name: "対話で届け方を決めるPublisher"
+  short_description: "掲載先と公開形態を対話で設定し、原稿の掲載・更新・告知・記録を扱う"
+  default_prompt: "$dialogue-publisher この原稿を掲載したいです。掲載先と公開形態を確認して進めてください。"

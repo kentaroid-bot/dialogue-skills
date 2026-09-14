@@ -1,0 +1,4 @@
+interface:
+  display_name: "対話から育てる論考"
+  short_description: "人間の仮説とAIの検討を分け、対話から根拠ある論考を育てる"
+  default_prompt: "$dialogue-essay を使って、この対話から人間の仮説・AIの検討・総括を分けた論考を作成してください。"

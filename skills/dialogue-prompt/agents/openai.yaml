@@ -1,0 +1,4 @@
+interface:
+  display_name: "対話から育てるプロンプト"
+  short_description: "対話から人間の意図を整理し、目的と実行条件を分けたプロンプトを作成"
+  default_prompt: "$dialogue-prompt を使い、この対話から意図を整理して実行用プロンプトを作成してください。"

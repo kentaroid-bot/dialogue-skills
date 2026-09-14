@@ -1,0 +1,4 @@
+interface:
+  display_name: "意図を引き継ぐチェック"
+  short_description: "制作意図と完成条件に照らして確認し、必要修正と修正不要を判断する"
+  default_prompt: "$dialogue-checker で、この成果物を対話の意図と今回の完成条件に照らしてチェックしてください。"

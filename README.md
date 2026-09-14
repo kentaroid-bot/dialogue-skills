@@ -34,6 +34,10 @@ Checkerは[Unflatten ProtocolのAdaptive Inquiry](https://github.com/kentaroid-b
 
 [既存のDialogue Essayリポジトリ](https://github.com/kentaroid-bot/dialogue-essay)は独立して残しています。このリポジトリは4つの現行版をまとめた配布先です。個々の手元のインストール先と自動同期する仕組みはありません。
 
+同梱するEssayは、独立リポジトリのcommit `57673cac97872caa9991167ab2288e926723a7ea` の `skills/dialogue-essay/` を、付属資料・呼び出し設定ごと無改変で収録しています。ライセンスは [LICENSE-dialogue-essay](LICENSE-dialogue-essay) を参照してください。
+
+CheckerとPublisherは、新しいPromptで「思考・適応」と「状態・記録・検証」を分けて再設計しました。人間の制作動機とエージェントの目的を別に伝え、実行条件は手続きとして明確にしています。[今回の設計とレビュー記録](docs/revisions/two-layer-redesign.md)に対応関係をまとめています。
+
 ## 検証の範囲
 
 形式、ローカル参照、設定テンプレート、指示と目的の整合性を確認しています。付属の事例は検証材料であり、独立したモデル比較や性能向上を実証した結果ではありません。

@@ -13,6 +13,35 @@
 
 ## 利用方法
 
+### デスクトップChatGPT・Codexでプラグインとして使う
+
+このリポジトリ全体が、4つのスキルを収録した `dialogue-skills` プラグインです。
+
+```text
+dialogue-skills/
+├── plugin.json                 # Agent Plugins形式の識別情報
+├── .codex-plugin/plugin.json   # OpenAI向け表示情報と互換用マニフェスト
+└── skills/
+    ├── dialogue-essay/
+    ├── dialogue-prompt/
+    ├── dialogue-checker/
+    └── dialogue-publisher/
+```
+
+個人用に導入する場合は、ローカルのリポジトリを指定してChatGPT Workの `@plugin-creator` またはCodexの `$plugin-creator` に、個人用マーケットプレイスへの登録を依頼してください。標準の配置先は `~/plugins/dialogue-skills/`、登録先は `~/.agents/plugins/marketplace.json` です。登録ファイルは各利用者の環境に作り、このリポジトリには含めません。
+
+登録後、デスクトップアプリの「Plugins」で「Personal / Created by me」から「Dialogue Skills」を開いてインストールします。CLIを使う場合、マーケットプレイス名が標準の `personal` なら `codex plugin add dialogue-skills@personal` でも導入できます。すでにインストール済みなら、この操作を繰り返す必要はありません。
+
+新しい会話を開き、ChatGPTでは `@` からプラグインまたは収録スキルを選びます。例えば「dialogue-checkerでこの原稿を確認してください」と依頼できます。表示されない場合はアプリを再読み込みしてください。
+
+このプラグインはスキルと参照資料を収録します。MCPサーバーや外部アプリの接続設定は含みません。Publisherが掲載に使う接続は、利用環境にあるツールを使います。
+
+リポジトリ、個人用プラグインの配置先、インストール済みキャッシュは別の場所です。更新時は最新版を配置先へ反映し、`plugin-creator`の更新手順で再インストールして、新しい会話から利用します。ルートと互換用マニフェストの名前・バージョンは揃えてください。
+
+形式と導入方法はOpenAI公式の[プラグインの作成](https://learn.chatgpt.com/docs/build-plugins)、[パッケージ仕様](https://developers.openai.com/plugins/build/plugins)、[利用方法](https://learn.chatgpt.com/docs/plugins)に基づきます。個人用ソースの利用可否は、アプリとワークスペースの設定に従います。
+
+### スキルを個別に配置する
+
 必要なスキルのフォルダを、使用するエージェントのスキル保存先へ配置してください。Codexでは通常 `~/.codex/skills/` を使用します。同名のスキルがある場合は、既存版を保存して差分を確認してから置き換えます。付属のreferencesとagentsも一緒に配置してください。
 
 呼び出し例：

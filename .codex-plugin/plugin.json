@@ -1,0 +1,27 @@
+{
+  "name": "dialogue-skills",
+  "version": "0.1.0",
+  "description": "対話の意図を保ち、論考・プロンプト・レビュー・掲載へつなぐ4つのスキル。",
+  "author": {
+    "name": "kentaroid-bot",
+    "url": "https://github.com/kentaroid-bot"
+  },
+  "homepage": "https://github.com/kentaroid-bot/dialogue-skills",
+  "repository": "https://github.com/kentaroid-bot/dialogue-skills",
+  "keywords": ["dialogue", "writing", "prompts", "review", "publishing"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dialogue Skills",
+    "shortDescription": "対話から、論考・指示・レビュー・掲載を育てる",
+    "longDescription": "dialogue-essay、dialogue-prompt、dialogue-checker、dialogue-publisherをまとめたプラグインです。人間の意図とAIの検討を区別し、必要なスキルを単独で使えます。掲載先の接続は利用環境で用意します。",
+    "developerName": "kentaroid-bot",
+    "category": "Productivity",
+    "capabilities": [],
+    "websiteURL": "https://github.com/kentaroid-bot/dialogue-skills",
+    "defaultPrompt": [
+      "この対話を、人間の考えとAIの検討を分けた論考にしてください。",
+      "この対話から、意図を保った実行用プロンプトを作ってください。",
+      "この成果物を、今回の目的と完成条件に照らして確認してください。"
+    ]
+  }
+}

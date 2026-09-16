@@ -63,7 +63,7 @@ Checkerは[Unflatten ProtocolのAdaptive Inquiry](https://github.com/kentaroid-b
 
 [既存のDialogue Essayリポジトリ](https://github.com/kentaroid-bot/dialogue-essay)は独立して残しています。このリポジトリは4つの現行版をまとめた配布先です。個々の手元のインストール先と自動同期する仕組みはありません。
 
-同梱するEssayは、独立リポジトリのcommit `618cc2c7278b68933aed82d04eb1752e15217320` の `skills/dialogue-essay/` を、付属資料・呼び出し設定ごと無改変で収録しています。ライセンスは [LICENSE-dialogue-essay](LICENSE-dialogue-essay) を参照してください。
+同梱するEssayは、独立リポジトリのcommit `98109281b6d6edc5be32d8e08961d3bc5117cc99` の `skills/dialogue-essay/` を、付属資料・呼び出し設定ごと無改変で収録しています。ライセンスは [LICENSE-dialogue-essay](LICENSE-dialogue-essay) を参照してください。
 
 CheckerとPublisherは、新しいPromptで「思考・適応」と「状態・記録・検証」を分けて再設計しました。人間の制作動機とエージェントの目的を別に伝え、実行条件は手続きとして明確にしています。[今回の設計とレビュー記録](docs/revisions/two-layer-redesign.md)に対応関係をまとめています。
 
@@ -74,3 +74,5 @@ CheckerとPublisherは、新しいPromptで「思考・適応」と「状態・�
 比較用の旧版は原文のまま保存しています。旧版内の相対リンクは保存前の配置を前提とします。実行には各フォルダ直下のSKILL.mdを使用してください。
 
 [読者へ案内する資料の範囲の改訂記録](docs/revisions/reader-reference-scope.md)には、EssayとCheckerの変更理由、原稿作成1件とレビュー5件の実行結果をまとめています。リンク・添付を含む成果物の適切さを確認し、問題のある参照先の指摘と、適切な原稿の完了判断を両方確かめました。
+
+[会話の参加者への配慮を加えた改訂記録](docs/revisions/participant-reference-scope.md)では、読者への有用性と、無関係な発言まで紹介されることの参加者にとっての適切さを分けています。追加版6実行と現行版2実行を比較し、適切な抜粋・全文リンクを維持できることも確認しました。

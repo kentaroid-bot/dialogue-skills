@@ -28,17 +28,26 @@ dialogue-skills/
     └── dialogue-publisher/
 ```
 
-個人用に導入する場合は、ローカルのリポジトリを指定してChatGPT Workの `@plugin-creator` またはCodexの `$plugin-creator` に、個人用マーケットプレイスへの登録を依頼してください。標準の配置先は `~/plugins/dialogue-skills/`、登録先は `~/.agents/plugins/marketplace.json` です。登録ファイルは各利用者の環境に作り、このリポジトリには含めません。
+GitHubから4スキルをまとめて導入できます。
 
-登録後、デスクトップアプリの「Plugins」で「Personal / Created by me」から「Dialogue Skills」を開いてインストールします。CLIを使う場合、マーケットプレイス名が標準の `personal` なら `codex plugin add dialogue-skills@personal` でも導入できます。すでにインストール済みなら、この操作を繰り返す必要はありません。
+```sh
+codex plugin marketplace add kentaroid-bot/dialogue-skills --ref main
+codex plugin add dialogue-skills@dialogue-skills
+```
 
-新しい会話を開き、ChatGPTでは `@` からプラグインまたは収録スキルを選びます。例えば「dialogue-checkerでこの原稿を確認してください」と依頼できます。表示されない場合はアプリを再読み込みしてください。
+デスクトップのPluginsでは「Dialogue Skills · GitHub」が導入元です。新しいタスクで使い、表示が更新されない場合はアプリを再読み込みしてください。
+
+更新時はカタログを更新し、プラグインを再取得して、インストール済みの版を確認します。
+
+```sh
+codex plugin marketplace upgrade dialogue-skills
+codex plugin add dialogue-skills@dialogue-skills
+codex plugin list --marketplace dialogue-skills --json
+```
+
+[導入・更新・配布の手順](docs/distribution.md)に、旧ローカル版からの移行、配布ZIPの作成、Web側への取り込み方法をまとめています。Web側で別に導入したコピーは、ローカルの更新だけでは更新されません。
 
 このプラグインはスキルと参照資料を収録します。MCPサーバーや外部アプリの接続設定は含みません。Publisherが掲載に使う接続は、利用環境にあるツールを使います。
-
-リポジトリ、個人用プラグインの配置先、インストール済みキャッシュは別の場所です。更新時は最新版を配置先へ反映し、`plugin-creator`の更新手順で再インストールして、新しい会話から利用します。ルートと互換用マニフェストの名前・バージョンは揃えてください。
-
-形式と導入方法はOpenAI公式の[プラグインの作成](https://learn.chatgpt.com/docs/build-plugins)、[パッケージ仕様](https://developers.openai.com/plugins/build/plugins)、[利用方法](https://learn.chatgpt.com/docs/plugins)に基づきます。個人用ソースの利用可否は、アプリとワークスペースの設定に従います。
 
 ### スキルを個別に配置する
 

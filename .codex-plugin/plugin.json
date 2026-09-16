@@ -1,6 +1,6 @@
 {
   "name": "dialogue-skills",
-  "version": "0.1.0+codex.20260916020213",
+  "version": "0.1.0+codex.20260916024048",
   "description": "対話の意図を保ち、論考・プロンプト・レビュー・掲載へつなぐ4つのスキル。",
   "author": {
     "name": "kentaroid-bot",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "dialogue-skills",
-  "version": "0.1.0",
+  "version": "0.1.0+codex.20260916001203",
   "description": "対話の意図を保ち、論考・プロンプト・レビュー・掲載へつなぐ4つのスキル。",
   "author": {
     "name": "kentaroid-bot",
@@ -9,5 +9,11 @@
   },
   "homepage": "https://github.com/kentaroid-bot/dialogue-skills",
   "repository": "https://github.com/kentaroid-bot/dialogue-skills",
-  "keywords": ["dialogue", "writing", "prompts", "review", "publishing"]
+  "keywords": [
+    "dialogue",
+    "writing",
+    "prompts",
+    "review",
+    "publishing"
+  ]
 }

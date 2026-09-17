@@ -13,7 +13,13 @@
 
 ## 利用方法
 
-### デスクトップChatGPT・Codexでプラグインとして使う
+### 公式ディレクトリから使う
+
+[ChatGPTのプラグイン一覧でDialogue Skillsを開く](https://chatgpt.com/plugins/plugins_6aaa1a44c0b481919f378cff2ce211fe)
+
+対話から論考を作るEssay、指示を整えるPrompt、成果物をレビューするChecker、掲載を進めるPublisherを収録しています。必要なスキルだけ、単独で使えます。
+
+### GitHubからCodexに導入する
 
 このリポジトリ全体が、4つのスキルを収録した `dialogue-skills` プラグインです。
 
@@ -35,7 +41,7 @@ codex plugin marketplace add kentaroid-bot/dialogue-skills --ref main
 codex plugin add dialogue-skills@dialogue-skills
 ```
 
-デスクトップのPluginsでは「Dialogue Skills · GitHub」が導入元です。新しいタスクで使い、表示が更新されない場合はアプリを再読み込みしてください。
+この方法で導入した場合、デスクトップのPluginsでは「Dialogue Skills · GitHub」が導入元です。新しいタスクで使い、表示が更新されない場合はアプリを再読み込みしてください。
 
 更新時はカタログを更新し、プラグインを再取得して、インストール済みの版を確認します。
 
